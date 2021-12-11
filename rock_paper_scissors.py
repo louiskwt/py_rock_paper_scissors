@@ -14,11 +14,12 @@ def play():
     # Draw
     if(user == computer):
         print('tie')
+        return 0
 
     if(is_winner(user, computer)):
         print('Yay! You won!!')
-
-    print('Oh, you lost!')
+    else:
+        print('Oh, you lost!')
 
     return 0
 
