@@ -1,5 +1,5 @@
 import random
-from helper import is_winner
+from helper import is_winner, is_wrong_input
 
 
 def play():
@@ -18,6 +18,8 @@ def play():
 
     if(is_winner(user, computer)):
         print('Yay! You won!!')
+    elif(is_wrong_input):
+        print("Wrong input! Please enter 'r', 'p', and 's' only")
     else:
         print('Oh, you lost!')
 
