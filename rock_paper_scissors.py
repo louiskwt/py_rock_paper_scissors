@@ -1,4 +1,5 @@
 import random
+from helper import is_winner
 
 
 def play():
@@ -20,13 +21,6 @@ def play():
     print('Oh, you lost!')
 
     return 0
-
-
-def is_winner(user, computer):
-    """a helper function to determine the winner"""
-    # return True if user wins
-    if((user == 'r' and computer == 's') or (user == 'p' and computer == 'r') or (user == 's' and computer == 'p')):
-        return True
 
 
 play()
